@@ -65,6 +65,36 @@ header a {
   color: aliceblue;
 }
 
+main {
+  background-color: white;
+  color: #272044;
+}
+
+main h3 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 4px;
+  text-align: left;
+  opacity: 30%;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+main h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: left;
+}
+
+main p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
 footer {
   color: white;
   font-size: 12px;
@@ -75,10 +105,10 @@ footer {
     url("../images/vienna\ background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
   font-weight: 400;
   line-height: 24px;
   text-align: left;
+  padding-left: 20px;
 }
 
 footer p {
@@ -94,6 +124,7 @@ footer a {
 section {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 
 ul {
@@ -112,9 +143,21 @@ h4 {
   text-align: left;
 }
 
+.img-responsive {
+  max-width: 100%;
+}
+
 .grid {
   display: grid;
+  grid-gap: 64px;
+}
+
+.grid-3-col {
   grid-template-columns: 1fr 2fr 2fr;
+}
+
+.grid-2-col {
+  grid-template-columns: 1fr 1fr;
 }
 
 @media (max-width: 960px) {
@@ -132,5 +175,14 @@ h4 {
 
   h3 {
     font-size: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
   }
 }
