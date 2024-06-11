@@ -127,6 +127,14 @@ section {
   padding: 100px 0;
 }
 
+.secondary {
+  background-color: #f8f8f8;
+}
+
+.text-center {
+  text-align: center;
+}
+
 ul {
   padding: 0;
 }
@@ -152,12 +160,53 @@ h4 {
   grid-gap: 64px;
 }
 
-.grid-3-col {
+.grid-3-col-first-sm {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
 .grid-2-col {
   grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-col {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  background-color: white;
+  margin: 30px 0;
+}
+
+.card-body {
+  padding: 30px;
+  display: block;
+}
+
+main h4 {
+  color: #272044;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: left;
+  margin: 0;
+}
+
+main h5 {
+  margin: 0;
+}
+
+.btn {
+  display: block;
+  color: white;
+  padding: 16px 32px 16px 32px;
+  background-color: #462cb2;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
 }
 
 @media (max-width: 960px) {
